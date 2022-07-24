@@ -34,6 +34,22 @@
           padding-left: 10px;
           margin:10px 0;
         }
+        form input[type=tel]
+        {
+          width: 30%;
+          height: 30px;
+          border: 1px solid #ccc;
+          padding-left: 10px;
+          margin:10px 0;
+        }
+        form input[type=number]
+        {
+          width: 30%;
+          height: 30px;
+          border: 1px solid #ccc;
+          padding-left: 10px;
+          margin:10px 0;
+        }
         form input[type=submit]
         {
           width: 100%;
@@ -61,9 +77,14 @@
   </head>
   <body>
 	  <form>
-        <h3>Entrar em contato</he>
+        <h3>Cadastro</h3>
+        <input id="usuario" type="text" name="usuario" placeholder="Seu Usuario"/>
         <input id="email" type="text" name="senha" placeholder="Seu E-mail" />
         <input id="password" type="password" name="senha" placeholder="Sua Senha"/>
+        <input id="password" type="password" name="senha" placeholder="Confirme a Senha"/>
+        <input id="nome" type="text" name="nome" placeholder="Nome Completo"/>
+        <input id="idade" type="number" name="idade" placeholder="Sua Idade"/>
+        <input id="telefone" type="tel" name="telefone" placeholder="Seu Telefone"/>
         <input type="submit" name="acao" value="enviar" onclick="alert('Dados enviados')"/>
     </form>
     <script>
