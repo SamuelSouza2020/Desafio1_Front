@@ -1,0 +1,12 @@
+<meta charset="UTF-8">
+
+<script>
+    var mediaCarros = 28;
+    var total = 2022/mediaCarros;
+    function mostrar(quantidade){
+        document.write("Já tivemos "+ Math.round(quantidade) + " carros até hoje");
+    }
+
+    mostrar(total);
+    
+</script>
