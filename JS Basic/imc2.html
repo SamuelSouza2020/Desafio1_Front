@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+    <script>
+
+        function tabelaIMC(peso, altura) {
+            var calculoIMC = peso/(altura * altura);
+            document.write("Seu IMC: " + Math.round(calculoIMC) + "<br>")
+            if(calculoIMC < 20){
+                document.write("Abaixo do Normal");
+            }
+            else if (calculoIMC < 24.9) {
+                document.write("Normal");
+            }
+            else if (calculoIMC < 29.9) {
+                document.write("Obesidade Leve");
+            }
+            else if (calculoIMC < 39.9) {
+                document.write("Obesidade Moderada");
+            }
+            else{
+                document.write("Obesidade Mórbida");
+            }
+            document.write("<br><br>");
+        }
+        tabelaIMC(70, 1.8);
+        tabelaIMC(95.6, 1.75);
+    </script>
