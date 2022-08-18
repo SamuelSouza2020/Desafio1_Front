@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+    <input>
+    <button>Enviar</button>
+    <script>
+        var receba = document.querySelector("input");
+
+        function compare(){
+            if(receba == "sii"){
+                alert("Boom");
+            }
+            else{
+                alert("Ruim");
+            }
+        }
+
+        var bt = document.querySelector("button");
+        bt.onclick = compare;
+
+    </script>
