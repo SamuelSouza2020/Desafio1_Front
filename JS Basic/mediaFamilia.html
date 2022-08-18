@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+    <script>
+        var quantasPessoas = prompt("Quantas pessoas?");
+        var idadePessoas = 0;
+        var cont = 0;
+        function receba(valor){
+            idadePessoas += valor;
+        }
+        function mostra(imprima){
+            document.write(imprima);
+            document.write("<br>");
+        }
+        while(cont < quantasPessoas){
+            receba(parseInt(prompt("Digite a idade")));
+            cont++;
+        }
+        mostra("Idade total: " + idadePessoas);
+        mostra("idade média: " + idadePessoas / quantasPessoas);
+    </script>
