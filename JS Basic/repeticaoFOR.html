@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+    <script>
+        function mostraResult(mostra){
+            document.write(mostra);
+        }
+        function pulaLinha(){
+            mostraResult("<br>");
+        }
+
+        var tabuada = 2;
+
+        for(var cont = 1; cont < 11; cont++){
+            mostraResult(tabuada + " X " + cont + " = " + (tabuada*cont));
+            pulaLinha();
+        }
+    </script>

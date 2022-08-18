@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+    <script>
+        var primeiraCopa = 1930;
+        var anoAtual = 2022;
+
+        function imprimir(mostra){
+            document.write(mostra);
+        }
+        function pulaLinha(){
+            imprimir("<br>")
+        }
+
+        imprimir("Anos das copas");
+        pulaLinha();
+        imprimir(primeiraCopa);
+        pulaLinha();
+
+        while(primeiraCopa < anoAtual){
+            primeiraCopa+=4;
+            imprimir(primeiraCopa)
+            pulaLinha();
+        }
+    </script>
